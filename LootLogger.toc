@@ -1,0 +1,8 @@
+## Interface: 11200
+## Title: LootLogger
+## Notes: Tracks epic loot/trades, saves them, has UI
+## Version: 1.12
+## SavedVariables: LootLoggerDB
+
+LootLogger.xml
+LootLogger.lua
