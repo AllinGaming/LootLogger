@@ -1,4 +1,4 @@
-# LootLogger (WoW 1.12 Addon)
+# LootLogger (TWoW Addon)
 
 LootLogger is a lightweight addon for World of Warcraft 1.12 (Vanilla) designed to track epic item looting and trading. It logs when a player receives a loot and if/when that item is later traded, showing the final owner of each item.
 
