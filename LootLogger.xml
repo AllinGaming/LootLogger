@@ -24,7 +24,7 @@
         </Anchors>
         <ScrollChild>
           <EditBox name="LootLoggerEditBox" multiLine="true" letters="0" autoFocus="false">
-            <Size><AbsDimension x="440" y="400"/></Size>
+            <Size><AbsDimension x="440" y="3000"/></Size>
             <FontString inherits="GameFontHighlightSmall"/>
             <Anchors>
               <Anchor point="TOPLEFT"/>
