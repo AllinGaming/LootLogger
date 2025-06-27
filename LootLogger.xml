@@ -15,28 +15,30 @@
     </Backdrop>
 
     <Frames>
-      <ScrollFrame name="LootLoggerScrollFrame" inherits="UIPanelScrollFrameTemplate">
-        <Size><AbsDimension x="460" y="230"/></Size>
-        <Anchors>
-          <Anchor point="TOPLEFT">
-            <Offset><AbsDimension x="30" y="-40"/></Offset>
-          </Anchor>
-        </Anchors>
-        <ScrollChild>
-          <EditBox name="LootLoggerEditBox" multiLine="true" letters="0" autoFocus="false">
-            <Size><AbsDimension x="440" y="3000"/></Size>
-            <FontString inherits="GameFontHighlightSmall"/>
-            <Anchors>
-              <Anchor point="TOPLEFT"/>
-            </Anchors>
-            <Scripts>
-              <OnEscapePressed>
-                this:ClearFocus()
-              </OnEscapePressed>
-            </Scripts>
-          </EditBox>
-        </ScrollChild>
-      </ScrollFrame>
+<ScrollFrame name="LootLoggerScrollFrame" inherits="UIPanelScrollFrameTemplate">
+  <Size><AbsDimension x="460" y="230"/></Size>
+  <Anchors>
+    <Anchor point="TOPLEFT">
+      <Offset><AbsDimension x="20" y="-30"/></Offset>
+    </Anchor>
+  </Anchors>
+  <ScrollChild>
+    <EditBox name="LootLoggerEditBox" multiLine="true" autoFocus="false" letters="20000">
+      <Size><AbsDimension x="440" y="30000"/></Size> <!-- Keeps the scroll working -->
+      <FontString inherits="GameFontHighlightSmall"/>
+      <Anchors>
+        <Anchor point="TOPLEFT"/>
+        <Anchor point="TOPRIGHT"/>
+      </Anchors>
+      <Scripts>
+        <OnEscapePressed>
+          this:ClearFocus()
+        </OnEscapePressed>
+      </Scripts>
+    </EditBox>
+  </ScrollChild>
+</ScrollFrame>
+
 
       <Button name="LootLoggerCloseButton" inherits="UIPanelButtonTemplate" text="Close">
         <Size><AbsDimension x="80" y="22"/></Size>
